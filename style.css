@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 1.8rem;
+  color: #272626;
+}
+
+.container {
+  min-height: 100vh;
+  background: #373b44;
+  background: linear-gradient(to left, #373b44, #4286f4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz__box {
+  width: 50rem;
+  background-color: #e6e6e6;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  position: relative;
+  margin: auto 2rem;
+}
+
+.question {
+  padding: 1rem;
+  border-bottom: 1px solid #d2d2d2;
+  margin: 0 2rem 0 2rem;
+}
+
+.options {
+  padding: 0.8rem 1rem;
+  margin-left: 2rem;
+}
+
+.options ul {
+  list-style-type: none;
+}
+
+.options ul li {
+  margin-bottom: 1.2rem;
+}
+
+.options ul li label {
+  color: rgb(63, 62, 62);
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.result {
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.result h3 {
+  border-bottom: 1px solid #c8d6e5;
+  padding-bottom: 1rem;
+  color: #222f3e;
+}
+
+.result p {
+  font-family: sans-serif;
+  color: #84817a;
+}
+
+.result p span {
+  color: #218c74;
+  font-weight: 700;
+}
+.result button {
+  width: 40%;
+  background-color: #2e86de;
+  color: #fff;
+}
+
+.result button:hover {
+  background-color: #54a0ff;
+}
+button {
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: #ff6b81;
+  padding: 1rem 2.4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #ff97a7;
+}
