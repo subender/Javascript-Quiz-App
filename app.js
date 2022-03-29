@@ -103,9 +103,10 @@ const showResults = () => {
 submitBtn.addEventListener("click", function () {
   const answer = getSelectedAnswer();
   calcScore(answer);
-  currentQuestion++;
+
   if (currentQuestion < questions.length) {
     if (answer) {
+      currentQuestion++;
       showQuestions();
     } else alert(" ⚠️ Choose a option ⚠️");
   } else {
